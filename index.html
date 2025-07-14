@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Selfie App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Voice Selfie App</h1>
+  <div class="container">
+    <div class="video-section">
+      <video id="video" autoplay playsinline></video>
+      <button id="takeSelfie">Take Selfie</button>
+      <canvas id="canvas" style="display:none;"></canvas>
+      <img id="selfiePreview" alt="Selfie Preview" style="display:none;"/>
+    </div>
+    <div class="audio-section">
+      <button id="startRecording">Start Recording</button>
+      <button id="stopRecording" disabled>Stop Recording</button>
+      <audio id="audioPreview" controls style="display:none;"></audio>
+    </div>
+    <div class="actions">
+      <button id="downloadBtn" disabled>Download</button>
+      <!-- <button id="uploadBtn" disabled>Upload</button> -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html> 
